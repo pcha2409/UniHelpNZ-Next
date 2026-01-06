@@ -1,43 +1,364 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --test: #fff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4faf6; /* very light green */
+    color: #2f3e34;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* ===== NAVBAR ===== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e3efe8;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.nav-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f6f4f;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: auto;
+    padding: 0;
+}
+
+.nav-links a {
+    display: inline-block;   
+    text-decoration: none;
+    color: #2f6f4f;
+    font-weight: 500;
+
+    background-color: rgba(159, 211, 181, 0.35);
+    padding: 8px 16px;
+    border-radius: 0px;
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+
+.nav-links a:hover {
+    background-color: rgba(159, 211, 181, 0.55);
+    transform: translateY(-7px);
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #dff1e6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2f6f4f;
+}
+
+header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* ===== BUTTONS ===== */
+
+button {
+    background-color: #9fd3b5;
+    color: #1f3d2b;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+button:hover {
+    background-color: #8bc5a6;
+}
+
+
+
+/*======ABOUT PAGE ======= */
+
+
+main img {
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.sources-heading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.career-response p {
+    white-space: pre-line;
+}
+
+/* -------------------------------ADJUSTING---------------------- */
+.adjusting-container {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.challenge-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.challenge-buttons button {
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #92b9a1fc;
+    color: #090b0aef;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.challenge-buttons button:hover {
+    background-color: #9bc7a9c0;
+    transform: translateY(-7px);
+}
+
+.solution-box {
+    display: none;
+    background-color: #9bdaa2a7;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 30px rgb(24, 41, 24);
+    margin-top: 30px;
+}
+
+.solution-box h3 {
+    color: #0d100e;
+    margin-bottom: 15px;
+}
+
+.solution-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.solution-box li {
+    margin-bottom: 10px;
+}
+
+/* ------------------- CSS FOR ACADEMIC PAGE -------------------- */
+/* ===== ACADEMIC HELP ===== */
+
+.academic-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.academic-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.study-tools h2,
+.academic-habits h2 {
+    margin-bottom: 30px;
+    color: #2f6f4f;
+}
+
+/* TOOL CARDS */
+
+.tool-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    background-color: #e7f4ec;
+    padding: 30px;
+    border-radius: 18px;
+    align-items: center;
+}
+
+.tool-text {
+    flex: 1;
+}
+
+.tool-text h3 {
+    margin-bottom: 10px;
+    color: #1f3d2b;
+}
+
+.tool-text ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.tool-text li {
+    margin-bottom: 8px;
+}
+
+/* IMAGES */
+
+.tool-image img {
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HABITS */
+
+.academic-habits ul {
+    padding-left: 20px;
+}
+
+.academic-habits li {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+/* ---------------- LOAN HELP -------------------------- */
+.loan-help {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.loan-help h2 {
+    color: #2f6f4f;
+    margin-bottom: 10px;
+}
+
+.loan-help .intro {
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    font-size: 16px;
+    background-color: #9fd3b5;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dropdown-btn:hover {
+    background-color: #c8e3c5;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #c4debb;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.dropdown-content p {
+    margin-bottom: 10px;
+}
+
+.dropdown-content ul {
+    padding-left: 20px;
+}
+
+/* ===== COLOUR SECTIONS ===== */
+
+.colour-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 60px 50px;
+    border-radius: 28px;
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings */
+.colour-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Paragraphs */
+.colour-section p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* ===== COLOURS ===== */
+
+.purple {
+    background: linear-gradient(135deg, #c7b9ff, #e6ddff);
+    color: #2e1a47;
+}
+
+.green {
+    background: linear-gradient(135deg, #b6e8c3, #e6f6ec);
+    color: #1f3b2d;
+}
+
+.pink {
+    background: linear-gradient(135deg, #ffbfd8, #ffe6f0);
+    color: #4a1f32;
 }
