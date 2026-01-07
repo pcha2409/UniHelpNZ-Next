@@ -1,18 +1,18 @@
-export default function Budgeting() {
+export default function Home() {
   return (
     <>
       <nav className="navbar">
    
 
 <ul className="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="budgeting.html">Budgeting</a></li>
-    <li><a href="academic.html">Academic Help</a></li>
-    <li><a href="adjusting.html">Adjusting to Uni Life</a></li>
-    <li><a href="figuring.html">Figuring out your career path</a></li>
-    <li><a href="which-uni.html">Which Uni should I go to?</a></li>
-    <li><a href="about.html">About</a></li>
-     <li><a href="student-loan.html">Applying for a student Loan</a></li>
+    <li><a href="index">Home</a></li>
+    <li><a href="budgeting">Budgeting</a></li>
+    <li><a href="academic">Academic Help</a></li>
+    <li><a href="adjusting">Adjusting to Uni Life</a></li>
+    <li><a href="figuring">Figuring out your career path</a></li>
+    <li><a href="which-uni">Which Uni should I go to?</a></li>
+    <li><a href="about">About</a></li>
+     <li><a href="student-loan">Applying for a student Loan</a></li>
 </ul>
 
 </nav>
