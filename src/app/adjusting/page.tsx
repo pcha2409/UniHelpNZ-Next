@@ -36,11 +36,11 @@ export default function Adjusting() {
 
         {/* <!-- BUTTONS --> */}
         <div className="challenge-buttons">
-            <button onclick="showSolution('lonely')">Feeling lonely</button>
-            <button onclick="showSolution('academic')">Academic pressure</button>
-            <button onclick="showSolution('overwhelmed')">Feeling overwhelmed</button>
-            <button onclick="showSolution('balance')">Balancing everything</button>
-            <button onclick="showSolution('confidence')">Doubting myself</button>
+            {/* <button onclick="showSolution('lonely')">Feeling lonely</button> */}
+            {/* <button onclick="showSolution('academic')">Academic pressure</button> */}
+            {/* <button onclick="showSolution('overwhelmed')">Feeling overwhelmed</button> */}
+            {/* <button onclick="showSolution('balance')">Balancing everything</button> */}
+            {/* <button onclick="showSolution('confidence')">Doubting myself</button> */}
         </div>
 
         {/* <!-- SOLUTIONS --> */}
@@ -136,7 +136,7 @@ export default function Adjusting() {
         </div>
         
         
-<hr style="margin: 10px 0;">
+<hr style={{ margin: "10px 0" }} />
 
 <section className="uni-terms">
     <h2>Uni terms & systems explained</h2>
@@ -146,12 +146,12 @@ export default function Adjusting() {
     </p>
 
     <div className="challenge-buttons">
-        <button onclick="showTerm('lecture')">Lecture vs Tutorial vs Lab</button>
-        <button onclick="showTerm('selfdirected')">Self-directed learning</button>
-        <button onclick="showTerm('gpa')">What is GPA?</button>
-        <button onclick="showTerm('calculate-gpa')">How GPA is calculated</button>
-        <button onclick="showTerm('timetable')">Timetables & schedules</button>
-        <button onclick="showTerm('internships')">Internships</button>
+        {/* <button onclick="showTerm('lecture')">Lecture vs Tutorial vs Lab</button> */}
+        {/* <button onclick="showTerm('selfdirected')">Self-directed learning</button> */}
+        {/* <button onclick="showTerm('gpa')">What is GPA?</button> */}
+        {/* <button onclick="showTerm('calculate-gpa')">How GPA is calculated</button> */}
+        {/* <button onclick="showTerm('timetable')">Timetables & schedules</button> */}
+        {/* <button onclick="showTerm('internships')">Internships</button> */}
     </div>
 
     <div className="solutions">
@@ -306,7 +306,10 @@ export default function Adjusting() {
         </div>
 
     </div>
-</section>
-    </>
+  </section>
+
+
+</main>
+</>
   );
 }
