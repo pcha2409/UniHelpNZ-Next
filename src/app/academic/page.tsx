@@ -31,7 +31,7 @@ export default function Academic() {
             </div>
 
             <div className="tool-image">
-                {/* <img src="notion-example.png" alt="Example of organised Notion notes"> */}
+                <img src="/notion-example.png" alt="Example of organised Notion notes"/>
             </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Academic() {
             </div>
 
             <div className="tool-image">
-                {/* <img src="onenote-example.png" alt="Example of OneNote notes"> */}
+                <img src="/onenote-example.png" alt="Example of OneNote notes"/>
             </div>
         </div>
 
