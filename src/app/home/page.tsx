@@ -1,0 +1,43 @@
+export default function Budgeting() {
+  return (
+    <>
+      <nav className="navbar">
+   
+
+<ul className="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="budgeting.html">Budgeting</a></li>
+    <li><a href="academic.html">Academic Help</a></li>
+    <li><a href="adjusting.html">Adjusting to Uni Life</a></li>
+    <li><a href="figuring.html">Figuring out your career path</a></li>
+    <li><a href="which-uni.html">Which Uni should I go to?</a></li>
+    <li><a href="about.html">About</a></li>
+     <li><a href="student-loan.html">Applying for a student Loan</a></li>
+</ul>
+
+</nav>
+
+
+<header>
+    <h1>UniHelp NZ</h1>
+    <p>A simple guide to help students navigate university</p>
+</header>
+
+<main>
+
+    <p>
+        Starting university can feel overwhelming.
+
+Suddenly you’re in a new environment, surrounded by unfamiliar systems, endless resources, 
+and expectations to figure everything out quickly. From lectures and tutorials to study tools, 
+degrees, majors, and career paths... it’s a lot to process, especially when you’re still unsure about what you want.
+UniHelp NZ was created to give students a calm starting point. A place to explore university life, reflect on what suits you, 
+and understand your options without pressure. This isn’t about having all the answers, instead, 
+it’s about helping you take your next step with a bit more clarity and confidence.
+    </p>
+
+
+</main>
+<script src="script.js"></script>   </>
+  );
+}
