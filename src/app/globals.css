@@ -88,7 +88,7 @@ main p {
 
 /* ===== BUTTONS ===== */
 
-button {
+button, .button {
     background-color: #9fd3b5;
     color: #1f3d2b;
     border: none;
@@ -99,7 +99,7 @@ button {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: #8bc5a6;
 }
 
@@ -178,7 +178,6 @@ main img {
 }
 
 .solution-box {
-    display: none;
     background-color: #9bdaa2a7;
     padding: 30px;
     border-radius: 16px;
