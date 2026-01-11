@@ -11,15 +11,15 @@ export default function whichuni() {
             based on my own experience and questions I wish I had asked earlier.
         </p>
 
-        <iframe 
+        {/* <iframe 
             src="which-uni-should-i-go-to.pdf"
             width="100%"
             height="600px"
             style={{ border: "none" }}
-            ></iframe>
+            ></iframe> */}
 
     </main>
 
-    <script src="script.js"></script> </>
+    </>
   );
 }

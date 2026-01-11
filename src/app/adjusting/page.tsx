@@ -1,5 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
+
+
 export default function Adjusting() {
-  return (
+  
+    return (
     <>
 
     {/* <!-- HEADER --> */}
@@ -69,7 +74,14 @@ export default function Adjusting() {
                     It usually means you’re adjusting.
                 </p>
                 <ul>
-                    <li>Check out the <a href="academic.html">Academic Help</a> section for study tips, support, and sources</li>
+                    <li>
+                    Check out the{" "}
+                    <Link href="/academic">
+                    <strong>Academic Help</strong>
+                    </Link>{" "}
+                    section
+                    </li>
+
                     <li>Use learning advisors and student hubs early, not only when things feel bad</li>
                     <li>Ask questions, even if they feel “basic”</li>
                 </ul>

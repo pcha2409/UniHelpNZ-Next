@@ -4,34 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <>
-      <nav className="navbar">
-        <ul className="nav-links">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="budgeting.html">Budgeting</a>
-          </li>
-          <li>
-            <a href="academic.html">Academic Help</a>
-          </li>
-          <li>
-            <a href="adjusting.html">Adjusting to Uni Life</a>
-          </li>
-          <li>
-            <a href="figuring.html">Figuring out your career path</a>
-          </li>
-          <li>
-            <a href="which-uni.html">Which Uni should I go to?</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="student-loan.html">Applying for a student Loan</a>
-          </li>
-        </ul>
-      </nav>
+      
       <header>
         <h1>UniHelp NZ</h1>
         <p>A simple guide to help students navigate university</p>

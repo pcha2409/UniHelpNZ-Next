@@ -1,22 +1,8 @@
+import Link from "next/link";
+
 export default function StudentLoan() {
   return (
     <>
-          <nav className="navbar">
-   
-
-<ul className="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="budgeting.html">Budgeting</a></li>
-    <li><a href="academic.html">Academic Help</a></li>
-    <li><a href="adjusting.html">Adjusting to Uni Life</a></li>
-    <li><a href="figuring.html">Figuring out your career path</a></li>
-    <li><a href="which-uni.html">Which Uni should I go to?</a></li>
-    <li><a href="budgeting.html">Budgeting</a></li>
-    <li><a href="student-loan.html">Applying for a student Loan</a></li>
-</ul>
-
-</nav>
-
 
 <section className="loan-help">
 
@@ -198,8 +184,14 @@ export default function StudentLoan() {
                 Student hubs, and budgeting services exist to help you before things reach crisis 
                 point. Using support is part of being financially responsible, not a sign of failure.<br/>
                 
-                <br/><strong>To get more information on Budgeting and Financial Independence for students, visit the <a href="budgeting.html">Budgeting</a> section</strong>
-            </p>
+                
+    <strong>
+    To get more information on budgeting and financial independence for students,
+    visit the{" "}
+    <Link href="/budgeting">Budgeting</Link> section.
+  </strong>
+</p>
+            
         </div>
 
     </div>
